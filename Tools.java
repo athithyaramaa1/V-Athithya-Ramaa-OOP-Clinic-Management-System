@@ -10,7 +10,6 @@ public class Tools {
     }
     
     void helloTool(){
-        System.out.println("Hello! I'm a tool");
+        System.out.println("Hello! I'm a tool. My name is " + toolName + ", it is " + (isElectric ? "electric" : "non-electric") + ", and I am used for " + purpose);
     }
-
 }

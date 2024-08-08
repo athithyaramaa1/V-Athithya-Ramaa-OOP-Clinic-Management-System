@@ -10,6 +10,6 @@ public class Doctor {
     }
 
     void helloDoctor(){
-        System.out.println("Hey there! I'm a doctor at this Clinic! My name is "+ name + " and I have " + yearsOfExperience + " years of experience. My specialty is " + specialty);
+        System.out.println("Hey there! I'm a doctor at this Clinic! My name is " + name + " and I have " + yearsOfExperience + " years of experience. My specialty is " + specialty);
     }
 }
