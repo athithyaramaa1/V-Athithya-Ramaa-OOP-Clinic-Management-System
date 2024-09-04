@@ -10,8 +10,6 @@ public class Main {
             doctor.helloDoctor();
         }
 
-        System.out.println("Total number of doctors: " + Doctor.getDoctorCount());
-        
         Attender[] attenders = {
             new Attender("John", 2),
             new Attender("Jane", 3),
@@ -21,8 +19,6 @@ public class Main {
         for(Attender attender:attenders){
             attender.helloAttender();
         }
-
-        System.out.println("Total number of attenders: " + Attender.getAttenderCount());
 
         Tools[] tools = {
             new Tools("Sthethescope", false, "screwing screws"),
@@ -34,8 +30,6 @@ public class Main {
             tool.helloTool();
         }
 
-        System.out.println("Total number of tools: " + Tools.getToolCount());
-
         Furniture[] furniture = {
             new Furniture("Chair", "Sitting"),
             new Furniture("Multi-purpose table", "Keeping stuff"),
@@ -45,7 +39,5 @@ public class Main {
         for(Furniture furn:furniture){
             furn.helloFurniture();
         }
-        
-        System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
     }
 }

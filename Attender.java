@@ -10,10 +10,6 @@ public class Attender {
         attenderCount++;
     }
 
-    static int getAttenderCount() {
-        return attenderCount;
-    }
-
     void helloAttender(){
         System.out.println("Hello! I'm an attender at! " + clinicName + " My name is " + name + " and I have " + yearsOfExperience + " years of experience");
     }
