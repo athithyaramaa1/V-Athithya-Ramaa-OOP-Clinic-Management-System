@@ -11,6 +11,10 @@ public class Tools {
         toolCount++;
     }
     
+    static int getToolCount(){
+        return toolCount;
+    }
+
     void helloTool(){
         System.out.println("Hello! I'm a tool. My name is " + toolName + ", it is " + (isElectric ? "electric" : "non-electric") + ", and I am used for " + purpose);
     }
