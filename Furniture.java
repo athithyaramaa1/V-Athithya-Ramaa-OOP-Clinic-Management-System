@@ -9,6 +9,10 @@ public class Furniture {
         furnitureCount++;
     }
 
+    static int getFurnitureCount() {
+        return furnitureCount;
+    }
+
     void helloFurniture() {
         System.out.println("Hello! I'm a piece of furniture. My name is " + name + " and I am used for " + purpose);
     }
