@@ -11,11 +11,7 @@ public class Doctor {
         this.specialty = specialty;
         doctorCount++;
     }
-
-    static int getDoctorCount() {
-        return doctorCount;
-    }
-
+    
     void helloDoctor(){
         System.out.println("Hey there! I'm a doctor at " + clinicName + "! My name is " + name + 
                            " and I have " + yearsOfExperience + " years of experience. My specialty is " + specialty);
