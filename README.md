@@ -24,4 +24,9 @@ This project is a simulation of a Clinic Management System designed to demonstra
 - Java Development Kit (JDK) ☕
 - Integrated Development Environment (IDE) such as IntelliJ IDEA or Eclipse 💻
 
+NOTE:
+In Java, there is no concept of static memory allocation for objects. As a result, dynamic memory allocation is implicitly handled by the system. Java manages memory dynamically through the use of Garbage Collection, which automatically reclaims memory that is no longer in use.
+
+Similarly, in Python, dynamic memory allocation is also handled automatically. Python uses a Garbage Collector to manage memory, freeing up space that is no longer needed. Both Java and Python rely on these garbage collection mechanisms to manage memory efficiently, reducing the need for manual memory management, unlike lower-level languages like C or C++.
+
 ## Do star this repo if you find it interesting! ⭐✨
