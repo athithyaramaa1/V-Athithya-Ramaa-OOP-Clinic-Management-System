@@ -10,6 +10,26 @@ public class Attender {
         attenderCount++;
     }
 
+    // Accessor (getter) methods
+
+    public String getName(){
+        return name;
+    }
+
+    public int getYearsOfExperience(){
+        return yearsOfExperience;
+    }
+
+    // Mutator (setter) methods
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setYearsOfExperience(int yearsOfExperience){
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
     static int getAttenderCount(){
         return attenderCount;
     }
