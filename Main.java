@@ -27,7 +27,7 @@ public class Main {
             attender.helloAttender();
         }
 
-        // Using accessors and mutators to change the values of the Attender object
+        // Using accessors and mutators to change the values of the Attender object and showing it in the output
         attenders[1].setYearsOfExperience(5);
         System.out.println("The years of experience of the second attender is updated: " + attenders[1].getYearsOfExperience());
 
