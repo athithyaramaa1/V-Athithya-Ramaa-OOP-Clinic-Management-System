@@ -1,4 +1,6 @@
 public class Furniture {
+    // Instance variables - private. Accessible only within the class thru accessor and mutator methods
+
     private String name;
     private String purpose;
     private static int furnitureCount = 0;
