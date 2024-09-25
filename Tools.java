@@ -1,4 +1,6 @@
 public class Tools {
+    // Instance variables - private. Accessible only within the class thru accessor and mutator methods
+
     private String toolName;
     private boolean isElectric;
     private String purpose;

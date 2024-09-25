@@ -1,4 +1,5 @@
 public class Doctor {
+    // Instance variables - private. Accessible only within the class thru accessor and mutator methods
     private String name;
     private int yearsOfExperience;
     private String specialty;
@@ -12,7 +13,7 @@ public class Doctor {
         doctorCount++;
     }
 
-    //Accessor (getter) methods)
+    //Accessor (getter) methods - public. Accessible outside the class
 
     public String getName(){
         return name;
@@ -26,7 +27,7 @@ public class Doctor {
         return specialty;
     }
 
-    //Mutator (setter) methods
+    //Mutator (setter) methods - public. Accessible outside the class
     public void setName(String name){
         this.name = name;
     }
