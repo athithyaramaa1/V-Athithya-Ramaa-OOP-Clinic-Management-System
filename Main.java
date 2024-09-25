@@ -10,6 +10,11 @@ public class Main {
             doctor.helloDoctor();
         }
 
+        // Using accessors and mutators to change the values of the Doctor object
+
+        doctors[1].setName("Dr. Venkatesh");
+        System.out.println("The name of the second doctor is updated: " + doctors[1].getName());
+
         System.out.println("Total number of doctors: " + Doctor.getDoctorCount());
 
         Attender[] attenders = {
@@ -21,6 +26,10 @@ public class Main {
         for(Attender attender:attenders){
             attender.helloAttender();
         }
+
+        // Using accessors and mutators to change the values of the Attender object
+        attenders[1].setYearsOfExperience(5);
+        System.out.println("The years of experience of the second attender is updated: " + attenders[1].getYearsOfExperience());
 
         System.out.println("Total number of attenders: " + Attender.getAttenderCount());
 

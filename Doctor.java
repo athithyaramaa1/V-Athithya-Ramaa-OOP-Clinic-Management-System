@@ -12,6 +12,33 @@ public class Doctor {
         doctorCount++;
     }
 
+    //Accessor (getter) methods)
+
+    public String getName(){
+        return name;
+    }
+
+    public int getYearsOfExperience(){
+        return yearsOfExperience;
+    }
+
+    public String getSpecialty(){
+        return specialty;
+    }
+
+    //Mutator (setter) methods
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setYearsOfExperience(int yearsOfExperience){
+        this.yearsOfExperience = yearsOfExperience;
+    }
+
+    public void setSpecialty(String specialty){
+        this.specialty = specialty;
+    }
+
     static int getDoctorCount(){
         return doctorCount;
     }
