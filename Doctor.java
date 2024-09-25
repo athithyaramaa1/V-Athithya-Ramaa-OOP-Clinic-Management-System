@@ -6,12 +6,23 @@ public class Doctor {
     private static String clinicName = "Athithya Clinic";
     private static int doctorCount = 0;
     
+    //Parameterized constructor - public. Accessible outside the class
+
     public Doctor(String name, int yearsOfExperience, String specialty){
         this.name = name;
         this.yearsOfExperience = yearsOfExperience;
         this.specialty = specialty;
         doctorCount++;
     }
+    
+    // Default constructor - public. Accessible outside the class
+    public Doctor(){
+        this.name = "Dr. John Doe";
+        this.yearsOfExperience = 0;
+        this.specialty = "General Medicine";
+        doctorCount++;
+    }
+
 
     //Accessor (getter) methods - public. Accessible outside the class
 
