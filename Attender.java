@@ -6,9 +6,19 @@ public class Attender {
     private static int attenderCount = 0;
     private static String clinicName = "Athithya Clinic";
     
+
+    // Parameterized constructor - public. Accessible outside the class
+
     public Attender(String name, int yearsOfExperience){
         this.name = name;
         this.yearsOfExperience = yearsOfExperience;
+        attenderCount++;
+    }
+
+    // Default constructor - public. Accessible outside the class
+    public Attender(){
+        this.name = "The Hulk";
+        this.yearsOfExperience = 0;
         attenderCount++;
     }
 

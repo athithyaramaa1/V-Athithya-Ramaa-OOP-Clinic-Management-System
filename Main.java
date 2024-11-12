@@ -3,7 +3,8 @@ public class Main {
         Doctor[] doctors = {
             new Doctor("Dr. Athithya Ramaa", 10, "Pediatrics"),
             new Doctor("Dr. Venkat", 5, "Dermatology"),
-            new Doctor("Dr. Strange", 15, "Neurology")
+            new Doctor("Dr. Strange", 15, "Neurology"),
+            new Doctor()
         };
 
         for(Doctor doctor:doctors){
@@ -20,7 +21,8 @@ public class Main {
         Attender[] attenders = {
             new Attender("John", 2),
             new Attender("Jane", 3),
-            new Attender("Doe", 1)
+            new Attender("Doe", 1),
+            new Attender()
         };
 
         for(Attender attender:attenders){
