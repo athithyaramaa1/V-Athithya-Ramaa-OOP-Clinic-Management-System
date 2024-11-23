@@ -24,6 +24,9 @@ public class Furniture {
         return furnitureCount;
     }
 
+    public Furniture() {
+    }
+
     void helloFurniture() {
         System.out.println("Hello! I'm a piece of furniture. My name is " + name + " I am used for " + purpose + " and I am made of " + material);
     }
