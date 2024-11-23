@@ -1,8 +1,6 @@
-public class Attender {
+public class Attender extends Staff {
 
     // Instance variables - private. Accessible only within the class thru accessor and mutator methods
-    private String name;
-    private int yearsOfExperience;
     private static int attenderCount = 0;
     private static String clinicName = "Athithya Clinic";
     
@@ -10,15 +8,13 @@ public class Attender {
     // Parameterized constructor - public. Accessible outside the class
 
     public Attender(String name, int yearsOfExperience){
-        this.name = name;
-        this.yearsOfExperience = yearsOfExperience;
+        super(name, yearsOfExperience);
         attenderCount++;
     }
 
     // Default constructor - public. Accessible outside the class
     public Attender(){
-        this.name = "The Hulk";
-        this.yearsOfExperience = 0;
+        super("The Hulk", 10);
         attenderCount++;
     }
 
@@ -46,9 +42,12 @@ public class Attender {
         return attenderCount;
     }
 
-    // Method to display the message
+    @Override
+    public void performDuty(){
+        System.out.println("I'm an attender. I assist doctors and patients.");
+    }
 
     void helloAttender(){
-        System.out.println("Hello! I'm an attender at! " + clinicName + " My name is " + name + " and I have " + yearsOfExperience + " years of experience");
+        System.out.println("Hello! I'm an attender at " + clinicName + " My name is " + name + " and I have " + yearsOfExperience + " years of experience");
     }
 }

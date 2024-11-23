@@ -9,6 +9,7 @@ public class Main {
 
         for(Doctor doctor:doctors){
             doctor.helloDoctor();
+            doctor.performDuty();
         }
 
         // Using accessors and mutators to change the values of the Doctor object
@@ -27,6 +28,7 @@ public class Main {
 
         for(Attender attender:attenders){
             attender.helloAttender();
+            attender.performDuty();
         }
 
         // Using accessors and mutators to change the values of the Attender object and showing it in the output
