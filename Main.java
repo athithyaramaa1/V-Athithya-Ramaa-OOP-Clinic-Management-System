@@ -58,5 +58,38 @@ public class Main {
         }
 
         System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
+
+        System.out.println("The concept of inheritance:");
+
+        System.out.println("Single Inheritance: ");
+
+        SeniorDoctor[] seniorDoctors = {
+            new SeniorDoctor("Dr. Ram", 25, "Cardiology", "Ph.D. in Cardiology"),
+            new SeniorDoctor("Dr. Smith", 30, "Oncology", "MD in Oncology")
+        };
+
+        for (SeniorDoctor seniorDoctor : seniorDoctors) {
+            seniorDoctor.helloDoctor();
+        }
+
+        System.out.println("Hierarchial Inheritance: ");
+
+        DiagnosticTool[] diagnosticTools = {
+            new DiagnosticTool("X-Ray Machine", true, "Imaging bones", "Radiology"),
+            new DiagnosticTool("Stethoscope", false, "Listening to heartbeats", "Cardiology")
+        };
+
+        SurgicalTool[] surgicalTools = {
+            new SurgicalTool("Scalpel", false, "Cutting", "Cardiac"),
+            new SurgicalTool("Laser", true, "Cutting", "Oncology")
+        };
+        
+        for(DiagnosticTool diagnosticTool:diagnosticTools){
+            diagnosticTool.helloTool();
+        }
+
+        for(SurgicalTool surgicalTool:surgicalTools){
+            surgicalTool.helloTool();
+        }
     }
 }

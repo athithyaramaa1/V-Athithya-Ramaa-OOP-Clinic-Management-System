@@ -17,8 +17,8 @@ public class Doctor {
     
     // Default constructor - public. Accessible outside the class
     public Doctor(){
-        this.name = "Dr. John Doe";
-        this.yearsOfExperience = 0;
+        this.name = "Dr. Superman";
+        this.yearsOfExperience = 20;
         this.specialty = "General Medicine";
         doctorCount++;
     }
