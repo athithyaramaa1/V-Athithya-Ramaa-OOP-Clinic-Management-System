@@ -47,22 +47,11 @@ public class Main {
 
         System.out.println("Total number of tools: " + Tools.getToolCount());
 
-        Furniture[] furniture = {
-            new Furniture("Chair", "Sitting"),
-            new Furniture("Multi-purpose table", "Keeping stuff"),
-            new Furniture("Patient Bed", "Treating patients")
-        };
         
-        for(Furniture furn:furniture){
-            furn.helloFurniture();
-        }
-
-        System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
-
         System.out.println("The concept of inheritance:");
-
+        
         System.out.println("Single Inheritance: ");
-
+        
         SeniorDoctor[] seniorDoctors = {
             new SeniorDoctor("Dr. Ram", 25, "Cardiology", "Ph.D. in Cardiology"),
             new SeniorDoctor("Dr. Smith", 30, "Oncology", "MD in Oncology")
@@ -78,7 +67,7 @@ public class Main {
             new DiagnosticTool("X-Ray Machine", true, "Imaging bones", "Radiology"),
             new DiagnosticTool("Stethoscope", false, "Listening to heartbeats", "Cardiology")
         };
-
+        
         SurgicalTool[] surgicalTools = {
             new SurgicalTool("Scalpel", false, "Cutting", "Cardiac"),
             new SurgicalTool("Laser", true, "Cutting", "Oncology")
@@ -87,9 +76,21 @@ public class Main {
         for(DiagnosticTool diagnosticTool:diagnosticTools){
             diagnosticTool.helloTool();
         }
-
+        
         for(SurgicalTool surgicalTool:surgicalTools){
             surgicalTool.helloTool();
         }
+
+        Furniture[] furniture = {
+            new Furniture("Chair", "Sitting"),
+            new Furniture("Multi-purpose table", "Keeping stuff", "Wood"),
+            new Furniture("Patient Bed", "Treating patients", "Steel")
+        };
+        
+        for(Furniture furn:furniture){
+            furn.helloFurniture();
+        }
+    
+        System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
     }
 }
