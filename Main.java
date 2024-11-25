@@ -35,7 +35,7 @@ public class Main {
         attenders[1].setYearsOfExperience(5);
         System.out.println("The years of experience of the second attender is updated: " + attenders[1].getYearsOfExperience());
 
-        System.out.println("Total number of attenders: " + Attender.getAttenderCount());
+        // System.out.println("Total number of attenders: " + Attender.getAttenderCount());
 
         Tools[] tools = {
             new Tools("Sthethescope", false, "screwing screws"),
@@ -47,7 +47,7 @@ public class Main {
             tool.helloTool();
         }
 
-        System.out.println("Total number of tools: " + Tools.getToolCount());
+        // System.out.println("Total number of tools: " + Tools.getToolCount());
 
         
         System.out.println("The concept of inheritance:");
@@ -93,6 +93,8 @@ public class Main {
             furn.helloFurniture();
         }
     
-        System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
+        // System.out.println("Total number of furniture: " + Furniture.getFurnitureCount());
+
+        ClinicReport.generateClinicReport();
     }
 }
