@@ -67,8 +67,11 @@ public class Main {
 
         DiagnosticTool[] diagnosticTools = {
             new DiagnosticTool("X-Ray Machine", true, "Imaging bones", "Radiology"),
-            new DiagnosticTool("Stethoscope", false, "Listening to heartbeats", "Cardiology")
+            new DiagnosticTool("Stethoscope", false, "Listening to heartbeats", "Cardiology"),
+            new DiagnosticTool("Ultrasound Machine", true, "Imaging internal organs", "Gynecology")
         };
+
+        DiagnosticToolPurposeCategorizer.categorize(diagnosticTools);
         
         SurgicalTool[] surgicalTools = {
             new SurgicalTool("Scalpel", false, "Cutting", "Cardiac"),
